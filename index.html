@@ -11,7 +11,7 @@
 
 <div class="box">
 
-    <div class="container">   
+    <div class="container" id="container2">   
         <h1>Formulário</h1>
         <div class="get">
             <h3>Formulário com GET</h3>
@@ -32,63 +32,61 @@
         <div class="facebook">
             <h3>Formulário de login no Facebook</h3>
             <form method="GET" action="index.html" enctype="multipart/form-data">
-            <div>
-                <input type="text" name="nome" id="nome" placeholder="Nome" required>
-                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
-                <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou email" required>
-                <input type="password" name="senha" id="senha" placeholder="Nova senha" required>                
-            </div>    
+                <div class="input-cadastro">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+                    <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou email" required>
+                    <input type="password" name="senha" id="senha" placeholder="Nova senha" required>                
+                </div>    
         </div>
         <div class="data">
-            <label>Data de nascimento:</label>
+            <label><strong> Data de nascimento:</strong></label>
             
-            <select name="dia" id="dia">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
+                <select name="dia" id="dia">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             
-            <select name="mes" id="mes">
-                <option value="jan">Jan</option>
-                <option value="fev">Fev</option>
-                <option value="mar">Mar</option>
-                <option value="abr">Abr</option>
-                <option value="mai">Mai</option>
-            </select>
+                <select name="mes" id="mes">
+                    <option value="jan">Jan</option>
+                    <option value="fev">Fev</option>
+                    <option value="mar">Mar</option>
+                    <option value="abr">Abr</option>
+                    <option value="mai">Mai</option>
+                </select>
             
-            <select name="ano" id="ano">
-                <option value="1987">1897</option>
-                <option value="1988">1988</option>
-                <option value="1989">1989</option>
-                <option value="1990">1990</option>
-                <option value="1991">1991</option>
-            </select>
+                <select name="ano" id="ano">
+                    <option value="1987">1897</option>
+                    <option value="1988">1988</option>
+                    <option value="1989">1989</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                </select>
         </div>    
-            <br>
-            <br>
-            
-            <label>Gênero:</label><br>
-            <label for="feminino">Feminino</label>
-            <input type="radio" name="genero" id="feminino" value="feminino">
-            
-            <label for="masculino">Masculino</label>
-            <input type="radio" name="genero" id="masculino" value="masculino">
-            
-            <label for="personalizado">Personalizado</label>
-            <input type="radio" name="genero" id="personalizado" value="personalizado">
-            
-            <br>
-            <br>
-            
-            <input type="file">
-            
-            <br>
-            <br>
-        
-            <input type="submit" value="Enviar">
-        </form>
+
+            <div class="genero">
+                <label><strong>Gênero:</strong></label>
+                <div class="feminino">
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" name="genero" id="feminino" value="feminino">
+                </div>    
+                <div class="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="genero" id="masculino" value="masculino">
+                </div>    
+                <div>
+                    <label for="personalizado">Não quero informar</label>
+                    <input type="radio" name="genero" id="personalizado" value="personalizado">
+                </div>   
+            </div>   
+            <div class="enviar">
+                <input type="file"><br>    
+                <input type="submit" value="Enviar">
+            </div>                
+             </form>
     </div>
 </div>    
     
