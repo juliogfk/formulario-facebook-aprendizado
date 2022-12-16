@@ -9,7 +9,7 @@ body{
 }
 
 .box{
-    margin: 1rem 55rem 2rem 35rem; 
+    margin: 5rem 45rem 2rem 45rem; 
     padding: 1rem 0 1rem 0;
     display: flex;
     justify-content: center;
@@ -84,16 +84,37 @@ h1{
     padding-bottom: 1em;
 }
 
+@media screen and (max-width: 1880px) {
+    .box {
+       margin: 3rem 48rem 2rem 48rem; 
+       padding: 1rem 0 1rem 0;
+   }
+ }
+
 @media screen and (max-width: 1600px) {
     .box {
-       margin: 1rem 60rem 2rem 20rem; 
+       margin: 3rem 40rem 2rem 40rem; 
+       padding: 1rem 0 1rem 0;
+   }
+ }
+
+ @media screen and (max-width: 1000px) {
+    .box {
+       margin: 3rem 20rem 2rem 20rem; 
        padding: 1rem 0 1rem 0;
    }
  }
 
 @media screen and (max-width: 918px) {
      .box {
-        margin: 1rem 20rem 2rem 10rem; 
+        margin: 3rem 18rem 2rem 18rem; 
         padding: 1rem 0 1rem 0;
     }
   }
+
+  @media screen and (max-width: 400px) {
+    .box {
+       margin: 4rem 2rem 2rem 1rem; 
+       padding: 1rem 0 1rem 0;
+   }
+ }
